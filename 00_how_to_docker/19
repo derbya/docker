@@ -1,0 +1,4 @@
+docker run -dit --name Abathur -v ~/Abathur:/root -p 3000:3000 python:2-slim
+docker exec Abathur pip install flask
+docker cp hw.py Abathur:/
+docker exec Abathur python hw.py

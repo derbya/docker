@@ -1,0 +1,1 @@
+docker inspect overlord | pcregrep -o1 "(?:^ {12}\"IPAddress\": \")([0-9]+.[0-9]+.[0-9]+.[0-9]+)(?:\",)"
